@@ -24,5 +24,3 @@ except ZeroDivisionError:
         if i < _avg:
             small_list.append(i)
 print('среднее арифметическое > ', _avg, small_list)
-
-
