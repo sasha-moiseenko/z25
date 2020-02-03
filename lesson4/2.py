@@ -1,18 +1,18 @@
 # Заполнить список вещественных чисел вводом с клавиатуры.
 # Сколько элементов списка больше по модулю максимального числа.
-
 _list = []
 _max = 0
 _count = 0
-try:
-    while True:
-        number = input('> ')
-        if not number:
-            break
+
+while True:
+    number = input('> ')
+    if not number:
+        break
+    try:
         number = int(number)
         _list.append(number)
-except ValueError:
-    print('Введите корректное число')
+    except ValueError:
+        print('Введите корректное число')
 for i in _list:
     if i > _max:
         _max = i

@@ -1,6 +1,5 @@
 # Заполнить список вещественных чисел вводом с клавиатуры.
 # Найте элементы списка, которые меньше среднего арифметического.
-
 _list = []
 _sum = 0
 _avg = 0
@@ -20,7 +19,8 @@ try:
     _avg = _sum / len(_list)
 except ZeroDivisionError:
     print('Деление на ноль запрещено: проверьте вводные данные')
+else:
     for i in _list:
         if i < _avg:
             small_list.append(i)
-print('среднее арифметическое > ', _avg, small_list)
+    print('среднее арифметическое > ', _avg, small_list)
