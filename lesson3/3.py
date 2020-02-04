@@ -1,18 +1,24 @@
-items = []
+# import helpers
 
-_sum = 0
-_mul = 1
+# from helpers import get_user_input_list, my_sum
 
-while True:
-    # while number := input('> '):
-    # https://www.geeksforgeeks.org/walrus-operator-in-python-3-8/
-    number = input('> ')
-    if not number:
-        break
-    number = float(number)
-    items.append(number)
-    _sum += number
-    _mul *= number
+from helpers import get_user_input_list
+from utils import my_sum as utils_my_sum  # noqa
 
-print(items)
-print(_sum, _mul)
+
+def main():
+    items = []
+
+    _sum = 0
+    _mul = 1
+
+    for number in get_user_input_list():
+        _sum += number
+        _mul *= number
+
+    print(items)
+    print(_sum, _mul)
+
+
+if __name__ == '__main__':
+    main()

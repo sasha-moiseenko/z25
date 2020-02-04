@@ -55,5 +55,24 @@ https://gist.github.com/tima-akulich/1a67dea321ba5faed9f953db4cebc62e
 
 #### PS: если что-то с pep8 не так или программа упадет в каком-то случает (обработать исключения), то задача не считается решенной правильно
 
-# 2. Lesson 3 / 4.02.2020
+# 3. Lesson 5 / 4.02.2020
 ### Docs
+* list comprehensions - https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
+* dict comprehensions - https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+* functions - https://www.w3schools.com/python/python_functions.asp
+* lambda functions - https://www.w3schools.com/python/python_lambda.asp
+* strings - https://docs.python.org/3.8/library/string.html
+* python modules - https://www.tutorialspoint.com/python/python_modules.htm
+* https://docs.python.org/3/library/__main__.html
+
+### Practice
+https://gist.github.com/tima-akulich/f8890190969f5eff1fdc5c8f4f451868
+
+### Homework 5 (lesson5)
+Задание описаны в файле в папке lesson5
+
+### как подтянуть изменения из моего репозитория в ваш fork?
+1. ```git checkout master```
+2. ```git remote add upstream https://github.com/tima-akulich/z25.git```
+3. ```git pull upstream master```
+4. Делаем все пункты из *2*.
