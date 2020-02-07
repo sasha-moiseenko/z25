@@ -78,3 +78,13 @@ https://gist.github.com/tima-akulich/f8890190969f5eff1fdc5c8f4f451868
 4. Делаем все пункты из *2*.
 
 # 4. Lesson 6 / 7.02.2020
+### Docs
+decorators - https://www.python.org/dev/peps/pep-0318/
+functions - https://docs.python.org/3/library/functions.html
+
+### Practice
+https://gist.github.com/tima-akulich/288ce370b25ae2f6f06f4f62ac9e4966
+
+### Homework 6 (lesson6)
+Задание описаны в файле в папке lesson6.
+Обратите внимание что вам так же необходимо написать тесты для задач.
