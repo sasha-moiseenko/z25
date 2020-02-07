@@ -79,8 +79,8 @@ https://gist.github.com/tima-akulich/f8890190969f5eff1fdc5c8f4f451868
 
 # 4. Lesson 6 / 7.02.2020
 ### Docs
-decorators - https://www.python.org/dev/peps/pep-0318/
-functions - https://docs.python.org/3/library/functions.html
+* decorators - https://www.python.org/dev/peps/pep-0318/
+* functions - https://docs.python.org/3/library/functions.html
 
 ### Practice
 https://gist.github.com/tima-akulich/288ce370b25ae2f6f06f4f62ac9e4966
