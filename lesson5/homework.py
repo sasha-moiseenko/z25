@@ -4,8 +4,14 @@
 """
 
 
-def custom_range(*args, **kwargs):
-    pass
+def custom_range(start, end=None, step=1):
+    if end is None:
+        start, end = 0, start
+    _list = []
+    while start < end:
+        _list.append(start)
+        start += step
+    return _list
 
 
 """
@@ -16,8 +22,17 @@ accum("cwAt") -> "C-Ww-Aaa-Tttt"
 """
 
 
-def accum(*args, **kwargs):
-    pass
+def accum(string):
+    index = 1
+    _list = []
+    for sym in string:
+        _list.append((sym * index).title())
+        index += 1
+    return '-'.join(_list)
+
+
+def accum(s):
+    return '-'.join([(sym * i).title() for i, sym in enumerate(s, 1)])
 
 
 """
@@ -38,8 +53,17 @@ there are 10 matches in the championship
 """
 
 
-def points(*args, **kwargs):
-    pass
+def points(_list):
+    total = 0
+    for item in _list:
+        first, second = tuple(map(int, item.split(':')))
+        # total = 3 if first > second else int(first == second)
+        if first > second:
+            total += 3
+        elif first == second:
+            total += 1
+
+    return total
 
 
 """
@@ -49,8 +73,11 @@ def points(*args, **kwargs):
 """
 
 
-def max_number_count(*args, **kwargs):
-    pass
+def max_number_count(_list):
+    counter = {}
+    for item in _list:
+        counter[item] = counter.get(item, 0) + 1
+    return max(counter.items(), key=lambda x: x[1])
 
 
 if __name__ == '__main__':

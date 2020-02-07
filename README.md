@@ -76,3 +76,5 @@ https://gist.github.com/tima-akulich/f8890190969f5eff1fdc5c8f4f451868
 2. ```git remote add upstream https://github.com/tima-akulich/z25.git```
 3. ```git pull upstream master```
 4. Делаем все пункты из *2*.
+
+# 4. Lesson 6 / 7.02.2020
