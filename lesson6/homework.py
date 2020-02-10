@@ -27,7 +27,18 @@ print_given()
 
 
 def print_given(*args, **kwargs):
-    pass
+    result = ''
+    print(kwargs)
+    for arg in args:
+        _type = type(arg)
+        result += f'{arg} {_type}\n'
+    for key in kwargs:
+        result += f'{key} {kwargs[key]} {type(kwargs[key])}\n'
+    return result
+
+#print(print_given(1, 2, [1, 2], 'str', two = 2))
+
+
 
 
 """
@@ -122,11 +133,11 @@ def div(x, y, show=False):
 div(2, 4, show=True)
 >>> 2.0
 """
-
-
-def flip(*args, **kwargs):
-    pass
-
+def flip(func):
+    def decorator(*args, **kwargs):
+        reversed_args = args[::-1]
+        return func(*reversed_args, **kwargs)
+    return decorator
 
 """
 Ex5
@@ -149,22 +160,38 @@ def identity(x):
 identity(57)
 >>> identity
 57
-"""
 
 
-def introduce_on_debug(*args, **kwargs):
-    pass
+
+def introduce_on_debug(debug):
+    def inner(func):
+        def decorator(*args, **kwargs):
+            if debug:
+                return func(*args, **kwargs)
+            else:
+                return func.__name__
+        return decorator
+    return inner
 
 
+
+@introduce_on_debug(debug=True)
+def identity(x):
+    return x
+
+print(identity(57))
 """
 Ex6
 Напишите декоратор timer, который выводит время выполнения функции в секундах
-"""
 
 
-def timer(*args, **kwargs):
-    pass
 
+import time
+def timer(func):
+    def decorator(*args, **kwargs):
+        start_time = time.time()
+        return func.__name__, time.time() - start_time
+    return decorator
 
 if __name__ == "__main__":
     """Тут напиши тесты для задача"""
