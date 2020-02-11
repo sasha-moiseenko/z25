@@ -1,3 +1,6 @@
+import time
+
+
 """
 Ex1
 Это простое упражнение на использование упаковок.
@@ -27,7 +30,10 @@ print_given()
 
 
 def print_given(*args, **kwargs):
-    pass
+    for arg in args:
+        print(arg, type(arg))
+    for key, value in kwargs.items():
+        print(key, value, type(value))
 
 
 """
@@ -60,8 +66,15 @@ number_names = {
 """
 
 
-def sort_by_abc(*args, **kwargs):
-    pass
+def sort_by_abc(_list):
+    number_names = {
+        0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
+        6: "six", 7: "seven", 8: "eight", 9: "nine",
+        10: "ten", 11: "eleven", 12: "twelve",
+        13: "thirteen", 14: "fourteen", 15: "fifteen", 16: "sixteen",
+        17: "seventeen", 18: "eighteen", 19: "nineteen"
+    }
+    return sorted(_list, key=lambda num: number_names[num])
 
 
 """
@@ -99,8 +112,10 @@ print(h(2, 3, 9))
 """
 
 
-def composition(*args, **kwargs):
-    pass
+def composition(func_1, func_2):
+    def _composition(*args, **kwargs):
+        return func_2(func_1(*args, **kwargs))
+    return _composition
 
 
 """
@@ -124,8 +139,15 @@ div(2, 4, show=True)
 """
 
 
-def flip(*args, **kwargs):
-    pass
+def flip(func):
+    def decorator(*args, **kwargs):
+        return func(*args[::-1], **kwargs)
+    return decorator
+
+
+@flip
+def div(x, y):
+    return x / y
 
 
 """
@@ -152,9 +174,22 @@ identity(57)
 """
 
 
-def introduce_on_debug(*args, **kwargs):
-    pass
+def introduce_on_debug(debug=False):
+    def inner(func):
+        def decorator(*args, **kwargs):
+            if debug:
+                print(f'Function name = {func.__name__}')
+            return func(*args, **kwargs)
+        return decorator
+    return inner
 
+
+@introduce_on_debug(debug=True)
+def identity(x):
+    return x
+
+
+print(identity(5))
 
 """
 Ex6
@@ -162,9 +197,28 @@ Ex6
 """
 
 
-def timer(*args, **kwargs):
-    pass
+def timer(func):
+    def decorator(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        return result, time.time() - start
+    return decorator
+
+
+@timer
+def func_sleep(seconds):
+    time.sleep(seconds)
 
 
 if __name__ == "__main__":
-    """Тут напиши тесты для задача"""
+    assert sort_by_abc([0, 1, 1, 2, 3, 5, 8, 13]) == [8, 5, 1, 1, 13, 3, 2, 0]
+
+    test_func = composition(lambda x: x ** 2, lambda x: x + 1)
+    assert test_func(3) == 10
+
+    assert div(4, 2) != 2
+    assert div(4, 2) == 0.5
+
+    result, seconds = func_sleep(4)
+    print(seconds)
+    assert seconds > 4

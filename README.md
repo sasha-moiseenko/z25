@@ -88,3 +88,14 @@ https://gist.github.com/tima-akulich/288ce370b25ae2f6f06f4f62ac9e4966
 ### Homework 6 (lesson6)
 Задание описаны в файле в папке lesson6.
 Обратите внимание что вам так же необходимо написать тесты для задач.
+
+# 5. Lesson 7 / 11.02.2020
+### Docs
+* regexp - https://docs.python.org/3/library/re.html
+
+### Practice
+https://gist.github.com/tima-akulich/0a4eb46ecb37ef7006ded486c1011ba9#file-lesson_5-ipynb
+
+### Homework 6 (lesson6)
+Задание описаны в файле в папке lesson7.
+Обратите внимание что вам так же необходимо написать тесты для задач.
