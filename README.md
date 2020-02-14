@@ -96,6 +96,19 @@ https://gist.github.com/tima-akulich/288ce370b25ae2f6f06f4f62ac9e4966
 ### Practice
 https://gist.github.com/tima-akulich/0a4eb46ecb37ef7006ded486c1011ba9#file-lesson_5-ipynb
 
-### Homework 6 (lesson6)
+### Homework 7 (lesson7)
 Задание описаны в файле в папке lesson7.
 Обратите внимание что вам так же необходимо написать тесты для задач.
+
+
+# 6. Lesson 8 / 14.02.2020
+### Docs
+- https://pythonworld.ru/tipy-dannyx-v-python/fajly-rabota-s-fajlami.html
+- https://pythonworld.ru/tipy-dannyx-v-python/stroki-funkcii-i-metody-strok.html
+- https://pythonworld.ru/moduli/modul-pickle.html - pickle
+- https://python-scripts.com/import-csv-python - csv
+- https://gitjournal.tech/python_xml/ - xml
+- https://pythonworld.ru/moduli/modul-json.html
+
+### Homework 8 (lesson8)
+Задание описаны в файле в папке lesson8/homework.py.
