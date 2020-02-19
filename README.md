@@ -118,5 +118,8 @@ https://gist.github.com/tima-akulich/0a4eb46ecb37ef7006ded486c1011ba9#file-lesso
 - https://en.wikipedia.org/wiki/Object-oriented_programming
 - https://docs.python.org/3/tutorial/classes.html
 
+### Practice
+https://gist.github.com/tima-akulich/092da9b52617f96c1e3a5f8a8538f77f
+
 ### Homework 9 (lesson9)
 Задание описаны в файле в папке lesson9/homework.py.
