@@ -123,3 +123,15 @@ https://gist.github.com/tima-akulich/092da9b52617f96c1e3a5f8a8538f77f
 
 ### Homework 9 (lesson9)
 Задание описаны в файле в папке lesson9/homework.py.
+
+
+# 8. Lesson 10 / 21.02.2020
+### Docs
+- https://habr.com/ru/post/186608/
+- https://pythonworld.ru/osnovy/with-as-menedzhery-konteksta.html
+
+### Practice
+https://gist.github.com/tima-akulich/ab861454c586b869ab1ca1f990d803f0
+
+### Homework 10 (lesson10)
+Задание описаны в файле в папке lesson10/homework.py.
