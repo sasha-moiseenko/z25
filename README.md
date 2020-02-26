@@ -146,7 +146,7 @@ https://gist.github.com/tima-akulich/ab861454c586b869ab1ca1f990d803f0
 - https://coverage.readthedocs.io/en/v4.5.x/cmd.html - покрытие
 
 ### Practice
-https://gist.github.com/tima-akulich/a661a876b4391430b6b3560934c99824
+https://gist.github.com/tima-akulich/d18922204a49c8c74103938a93a2b61a
 
 ### Homework 11
 Задание описаны в файле в папке lesson11/homework.py. + покрыть тестами tests.py
