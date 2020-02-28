@@ -150,3 +150,21 @@ https://gist.github.com/tima-akulich/d18922204a49c8c74103938a93a2b61a
 
 ### Homework 11
 Задание описаны в файле в папке lesson11/homework.py. + покрыть тестами tests.py
+
+# 10. Lesson 12 28/02/2020
+### Documentation
+- https://www.tutorialspoint.com/sql/sql-quick-guide.htm - гайд по sql
+- https://www.postgresqltutorial.com/postgresql-data-types/
+- https://docs.google.com/presentation/d/1zbuwgSwQZZYJ-uChaSbtla7Izyr1uJNSgZVQ-eNFyWI/edit?usp=sharing - презентация
+### homework
+```
+1.
+Представим что мы создаем приложение для прохождения каких-либо тестов.
+
+Описать схему базы данных для этого приложения (таблицы и связи)
+
+Придумать таблицы. Придумать поля у каждой таблицы. 
+Пользователь может отвечать на вопрос один раз. 
+Правильный вариант ответа только один.
+
+```

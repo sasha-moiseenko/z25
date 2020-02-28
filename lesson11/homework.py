@@ -25,3 +25,23 @@ n включительно.
 биномиальных коэффициентов C0n,C1n,…,Cnn
 Запрещается использовать факториалы.
 """
+
+
+class BinomialCoefficients:
+    def __init__(self, n):
+        self.n = n
+        self.numerator = 1
+        self.count = 0
+        self.denominator = 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.count <= self.n:
+            result = self.numerator // self.denominator
+            self.numerator *= (self.n - self.count)
+            self.denominator *= (self.count + 1)
+            self.count += 1
+            return result
+        raise StopIteration
